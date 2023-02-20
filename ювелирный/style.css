@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Nunito&family=Poiret+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lobster';
+}
+
+.start_page{
+    height: 100vh;
+    background-image: url('Images/background.jpg');
+    background-size: cover;
+    background-position-y: -75px;
+}
+
+.start_page>section{
+    max-width: 1200px;
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 50, 50, 0.75);
+    z-index: 0;
+}
+
+header{
+    width: 100%;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+header>*{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a,i{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header > article > img{
+    height: 50px;
+}
+
+header > article > *{
+    margin: 0px 20px;
+}
+
+.start_page > section > article > h1{
+    font-size: 36px;
+    color: white;
+    margin-bottom: 50px;
+}
+.start_page > section > article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.start_page > section > article > button{
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: rgba(50, 50, 50, 1);
+    border: white 2px solid;
+    color: white;
+    text-transform: uppercase;
+}
+
+body>section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+}
+body>section>h3{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+body>section>h2{
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+}
+.buttons>button{
+    width: 100%;
+    padding: 20px 40px;
+    background-color: #fff;
+    border:rgba(50, 50, 50, 0.25) solid 2px;
+    text-transform: uppercase;
+    color: rgba(50, 50, 50, 1);
+}
+.buttons>button.active{
+    background-color: rgba(50, 50, 50, 1);
+    color: white;
+}
+.categories{
+    margin-top: 20px;
+    width: 1068px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    grid-template-rows: repeat(2, 250px);
+}
+.categories>article{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-size: cover;
+}
+.categories>article>p{
+    color: white;
+    text-transform: uppercase;
+}
+.categories>article:nth-child(1){
+    background-image: url("Images/1.jpg");
+}
+.categories>article:nth-child(2){
+    background-image: url("Images/2.jpg");
+}
+.categories>article:nth-child(3){
+    background-image: url("Images/3.jpg");
+}
+.categories>article:nth-child(4){
+    background-image: url("Images/4.jpg");
+}
+.categories>article:nth-child(5){
+    background-image: url("Images/5.jpg");
+}
+.categories>article:nth-child(6){
+    background-image: url("Images/6.jpg");
+}
+.categories>article>.fon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+}
+.categories>article{
+    position: relative;
+}
+.categories>article>p{
+    z-index: 1;
+    padding: 20px;
+    font-size: 16px;
+}
+.black{
+    background-image: url('Images/black_background.svg');
+}
+.black>*{
+    color: white;
+}
+.black>p{
+    width: 1068px;
+    font-size: 24px;
+    text-align: center;
+}
+.black>button{
+    color: black;
+    border: none;
+    width: 161.25px;
+    height: 59.2px;
+    text-transform: uppercase;
+    background-color: white;
+    margin-top: 50px;
+}
+.categories.second>article:nth-child(1){
+    background-image: url('Images/11.webp');
+}
+.categories.second>article:nth-child(2){
+    background-image: url('Images/22.jpeg')
+}
+.categories.second>article:nth-child(3){
+    background-image: url('Images/33.png')
+}
+.categories.second{
+    grid-template-rows: 350px;
+}
+.categories.second~button{
+    background-color: rgb(35, 74, 35);
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.outer{
+    padding: 10px;
+    border: 1px solid white;
+}
+.outer>article{
+    padding: 20px;
+    background-color: white;
+}
+.outer>article>input,
+.outer>article>button{
+    padding: 10px;
+    text-transform: uppercase;
+}
+.outer>article>button{
+    padding: 10px 20px;
+}
+.tree{
+    width: 700px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer>section:nth-child(1){
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 50px;
+    padding: 100px 0;
+}
+footer>section:nth-child(1)>article>h3{
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+footer img{
+    max-width: 25%;
+}
+
+footer i{
+    color: black;
+}
